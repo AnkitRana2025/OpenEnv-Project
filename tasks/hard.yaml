@@ -1,0 +1,7 @@
+# tasks/hard.yaml
+name: "Emergency Grid Recovery"
+description: "Recover from grid failures with limited resources"
+difficulty: hard
+max_steps: 1500
+target_stability: 0.7
+reward_threshold: 0.6

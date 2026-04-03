@@ -1,0 +1,42 @@
+# openenv.yaml
+name: SmartGridEnv
+version: 1.0.0
+description: Smart Energy Grid Management Environment for AI Agents
+
+environment:
+  class: environment.base_env.SmartGridEnv
+  max_episode_steps: 1000
+  render_modes: ["human", "rgb_array"]
+
+observation_space:
+  type: box
+  low: -inf
+  high: inf
+  shape: [12]  # Energy demand, solar, battery, grid price, etc.
+
+action_space:
+  type: box
+  low: 0
+  high: 1
+  shape: [3]   # Battery charge, solar usage, grid draw
+
+tasks:
+  easy:
+    name: "Basic Load Balancing"
+    description: "Maintain grid stability with predictable demand"
+    max_steps: 500
+    
+  medium:
+    name: "Peak Load Management"
+    description: "Handle sudden demand spikes and variable renewable energy"
+    max_steps: 1000
+    
+  hard:
+    name: "Emergency Grid Recovery"
+    description: "Recover from grid failures with limited resources"
+    max_steps: 1500
+
+metadata:
+  authors: ["Your Name"]
+  license: MIT
+  tags: ["energy", "grid", "sustainability", "reinforcement-learning"]

@@ -1,0 +1,7 @@
+# tasks/easy.yaml
+name: "Basic Load Balancing"
+description: "Maintain grid stability above 0.9 for 500 steps"
+difficulty: easy
+max_steps: 500
+target_stability: 0.9
+reward_threshold: 0.8

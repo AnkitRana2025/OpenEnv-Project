@@ -1,0 +1,26 @@
+# requirements.txt - Updated for OpenEnv Project
+# Core dependencies
+numpy>=1.24.0
+pydantic>=2.0.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# UI and Visualization
+gradio>=4.0.0
+matplotlib>=3.7.0
+
+# For training and RL (optional - only if needed)
+# stable-baselines3>=2.2.0
+# torch>=2.0.0
+# gymnasium>=0.29.0
+
+# Optional LLM clients (install only what you need)
+# openai>=1.0.0
+# google-generativeai>=0.3.0
+# anthropic>=0.18.0
+# huggingface-hub>=0.19.0
+
+# Testing and utilities
+pytest>=7.4.0
+typing-extensions>=4.8.0
+

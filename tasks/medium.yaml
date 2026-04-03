@@ -1,0 +1,7 @@
+# tasks/medium.yaml
+name: "Peak Load Management"
+description: "Handle sudden demand spikes while maintaining stability above 0.8"
+difficulty: medium
+max_steps: 1000
+target_stability: 0.8
+reward_threshold: 0.7
