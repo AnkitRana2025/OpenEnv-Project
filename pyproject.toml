@@ -1,0 +1,31 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openenv-smart-grid"
+version = "1.0.0"
+description = "OpenEnv Smart Grid Energy Management Environment"
+authors = [{name = "Ankit Rana", email = "your-email@example.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+    "gradio>=4.0.0",
+    "matplotlib>=3.7.0",
+    "python-dotenv>=1.0.0",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AnkitRana2026/openenv-smart-grid"
+"Hugging Face" = "https://huggingface.co/spaces/AnkitRana2026/OpenEnv-Project"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["environment*", "agents*", "tasks*", "graders*"]
